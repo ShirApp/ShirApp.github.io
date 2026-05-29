@@ -135,15 +135,25 @@
     <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>
-        You can reach me via <a href="https://scholar.google.com/citations?user=epTXkDsAAAAJ&hl=en" target="_blank">Google Scholar</a>
-        or <a href="https://www.linkedin.com/in/shir-ashury-tahan/" target="_blank">LinkedIn</a>.
-      </p>
+      <p>Feel free to reach out — click the button below to send me an email.</p>
+      <button class="btn contact-btn" onclick="revealEmail()">Show email</button>
+      <span id="email-display" style="display:none; margin-left: 0.75rem;"></span>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Shir Ashury-Tahan &middot; IBM Research</p>
   </footer>
+  <script>
+    function revealEmail() {
+      const u = "shir.ashury-tahan";
+      const d = "ibm.com";
+      const el = document.getElementById("email-display");
+      const addr = u + "@" + d;
+      el.innerHTML = '<a href="mailto:' + addr + '">' + addr + '</a>';
+      el.style.display = "inline";
+      document.querySelector(".contact-btn").style.display = "none";
+    }
+  </script>
 </body>
 </html>

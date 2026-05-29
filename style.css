@@ -190,6 +190,23 @@ section h2 {
   text-decoration: none;
 }
 
+/* ── Contact ── */
+.contact-btn {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  padding: 0.3rem 0.9rem;
+  cursor: pointer;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--accent);
+  transition: background 0.15s, color 0.15s;
+}
+.contact-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 /* ── Footer ── */
 footer {
   text-align: center;
